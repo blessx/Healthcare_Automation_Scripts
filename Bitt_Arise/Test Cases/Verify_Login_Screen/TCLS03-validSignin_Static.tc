@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This use static credentials.</description>
+   <name>TCLS03-validSignin_Static</name>
+   <tag></tag>
+   <comment>Note: There is no Sign_up feature yet so signin feature test auth is static
+This is to verify the signin feature using valid credentials</comment>
+   <testCaseGuid>a75994fa-c416-483a-80d5-869d3cf94926</testCaseGuid>
+</TestCaseEntity>
