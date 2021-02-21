@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if it will transition to each screen when you tap each tab.</description>
+   <name>TCHS01_HomeTabbar_transition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cee14161-2366-4928-b3a6-4445a721bdde</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if each card will transition to each screen when you tap each card section.</description>
+   <name>TCHS02_HomeTopcards_transition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d4bcf780-7a7f-4ae9-9e34-3562a189c5eb</testCaseGuid>
+</TestCaseEntity>

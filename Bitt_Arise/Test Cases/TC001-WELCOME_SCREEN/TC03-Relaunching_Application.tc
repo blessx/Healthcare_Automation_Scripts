@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if the welcome screen displays when you uninstall and reinstall the app.</description>
+   <name>TC03-Relaunching_Application</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7b884a5-cc9b-43b6-8901-71ac46c0b9dd</testCaseGuid>
+</TestCaseEntity>
