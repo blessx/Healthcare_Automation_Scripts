@@ -58,3 +58,34 @@ File : release/1.1.3 - origin
        - Verify if the record modal will display if the body fat record button is tap
        - Verify if the record modal will display if the blood pressure record button is tap
        - Verify if the record modal will display if the record button is tap
+
+****RECORDING****
+
+ - [ ] Verify the functionality for recording body weight data
+       
+       - Verify the validation message if the inputted value is 0
+       - Verify the validation message if the inputted value is more than 300
+       - Verify to record a valid data
+
+
+ - [ ] Verify the functionality for recording body fat data
+       
+       - Verify the validation message if the inputted value is 0.0 or 0
+       - Verify the validation message if the inputted value is more than 99.9
+       - Verify to record a valid data
+
+
+ - [ ] Verify the functionality for recording blood pressure data
+       
+       - Verify the validation message if the inputted value for AM and PM is 0
+       - Verify the validation message if the inputted value for AM and PM more than 999
+       - Verify the validation message if the inputted value for min is greater than the max data value
+       - Verify to record valid data for AM
+       - Verify to record valid date for PM
+
+
+ - [ ] Verify the functionality for recording health checkup history data manually
+
+       - Verify to validation message if the required items are empty
+       - Verify to record a valid data
+
