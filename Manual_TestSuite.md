@@ -1,15 +1,15 @@
 
 
 # PocketHealthcare -  USER MANUAL
-***[Running Test Suites individually]***
-Arise - PocketHealthcare
-Regression testing purposes only
+***[Running a Test Suites]***
+
+Arise - Pocket Healthcare Application
 By: Blezel M. Tajor
 
 ***
 
 **Purpose and Objectives**
-This manual is intended to teach QA or other staff how to run Katalon scripts through individual test suites for regression testing. The success of this automated test is that QA reduces the time it takes to perform regression tests, especially when the application is large.
+This manual is intended to teach QA or other staff how to run Katalon scripts through running a test suites for doing re-testing on each screen or feature of the Pocket Healthcare application. The success of this automated test is that QA reduces the time it takes to perform regression tests, especially when the application is large.
 
 **What you need**
 1.  A running Katalon Studio.
@@ -21,7 +21,7 @@ This manual is intended to teach QA or other staff how to run Katalon scripts th
 6.  Download or clone the script files from Github.
 	- Download or clone the file [here](https://github.com/blessx/Pockethealthcare_Testing).
 
-*If the above steps have already been performed, proceed to the steps to run the Catalon script using your Android device [Actual or Simulator].*
+*If the above steps have already been performed, proceed to the steps to run the Katalon script using your Android device [Actual or Simulator].*
 
 **Step 1**
 -   Download the APK file [here](https://drive.google.com/drive/folders/1Z1MxlP4vH6UAnAnL5mZgYQPUEqoWWzME?usp=sharing).
