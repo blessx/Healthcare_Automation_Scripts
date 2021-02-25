@@ -10,7 +10,7 @@ By: Blezel M. Tajor
 
 **Purpose and Objectives**
 
-This manual is intended to teach QA or other staff how to run Katalon scripts through the test suite collective which is very useful for doing the regression testing. The success of this automated test is that QA reduces the time it takes to perform regression tests, especially when the mobile application is getting bigger.
+This manual is intended to teach QA or other staff how to run Katalon scripts through running the test suite collective which is very useful for doing the regression testing. The success of this automation test is to reduces the time QA takes to perform regression and retesting tests, especially when the mobile application is getting bigger.
 
 **What you need**
 1.  A running Katalon Studio.
@@ -66,7 +66,7 @@ This manual is intended to teach QA or other staff how to run Katalon scripts th
 
 **Conclusion**
 
-Therefore I conclude, that by following the steps above, the staff or QA can run the test suite collective in Katalon Studios using their Android device.
+Therefore I conclude that by following the steps above, the staff or QA can run the test suite collective in Katalon Studios using their Android device.
 
   
  **Notes to remember**
