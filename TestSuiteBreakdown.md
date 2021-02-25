@@ -2,7 +2,8 @@
 
 ## PocketHealthcare - TEST SUITE BREAKDOWN
 
-Arise - PocketHealthcare
+Arise - Pocket Healthcare Application
+
 By: Blezel M. Tajor
 
 ***
