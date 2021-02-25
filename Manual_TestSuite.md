@@ -3,6 +3,7 @@
 # PocketHealthcare -  USER MANUAL
 ***[Running a Test Suite]***
 Arise - Pocket Healthcare Application
+
 By: Blezel M. Tajor
 
 ***
