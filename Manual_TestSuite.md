@@ -28,6 +28,7 @@ This manual is intended to teach QA or other staff how to run Katalon test scrip
 -   Download the APK file [here](https://drive.google.com/drive/folders/1Z1MxlP4vH6UAnAnL5mZgYQPUEqoWWzME?usp=sharing).
 -   Save the file in any directory you want.
 -   Take note of the directory address for later steps.
+
 ![](https://gyazo.com/d7cc6b75851e569bb2b58f1846be5a04.gif)
 
 
@@ -35,6 +36,7 @@ This manual is intended to teach QA or other staff how to run Katalon test scrip
 -   Open the Katalon Studio
 -   Open the downloaded file in the Katalon Studio
 		- Click the 'File' in the top bar or 'Open Project' button
+		
 ![](https://i.gyazo.com/2d35117f71260748e2f4359c0bffe75f.gif)
 
 **Steps 3**
@@ -42,17 +44,20 @@ This manual is intended to teach QA or other staff how to run Katalon test scrip
 -   Double-click the “default” file
 -   Edit the global variable for the APK file
 -   Double-click on the value section and paste the directory containing the downloaded APK file
+
 ![](https://i.gyazo.com/ab343030eede1b5471302c8b4129ad78.gif)
 
 **Steps 4**
 -   Click the Test Suite tab
 -   Double-click any of the 'Test Suite' file 
 	-	Check if the Test cases ID are in correct order and the Run column are all checked.
+
 ![](https://i.gyazo.com/859f618714909d60b68d7bfb4af0a428.gif)
 
 -   Run the test suite on the Android device by clicking the arrow down beside the play icon and select the desired Android device.
 	-	If you are using an Android Emulator, open the emulator first before proceeding.
 	-	If you are using an Actual android device, plug the device first before proceeding.
+
 ![](https://i.gyazo.com/47728c5983b553b62701e4ecf94818ce.gif)
 
 **Conclusion**
