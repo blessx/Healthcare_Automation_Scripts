@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if can record Body fat data</description>
+   <name>TCPR002_BodyFat_record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac424b63-795d-4a51-8571-023691a3d1a6</testCaseGuid>
+</TestCaseEntity>

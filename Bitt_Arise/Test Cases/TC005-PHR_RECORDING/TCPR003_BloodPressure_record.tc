@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if can record Blood pressure data</description>
+   <name>TCPR003_BloodPressure_record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7b446ac-1a4f-4a78-8f6f-4a3896e2e1fe</testCaseGuid>
+</TestCaseEntity>
