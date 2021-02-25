@@ -39,6 +39,8 @@ By: Blezel M. Tajor
 	- Expected outcome :
 		- When the app is restarted, the welcome screen should not be displayed and the login screen should be displayed instead. After confirming that the login screen title is present the script should be “PASSED”.
 
+Demonstration Result : Link [here](https://www.loom.com/share/49f8895726a5423796bc9d2846e607a9).
+
 ***  
 
 ### TS002-Verify_LoginScreen
@@ -84,6 +86,7 @@ By: Blezel M. Tajor
 	- Expected outcome :
 	    -	When the script verifies that the credentials are valid it should transition to the HOME screen - TOP and the script should be “PASSED”.
     
+Demonstration Result : Link [here](https://www.loom.com/share/2e7c62e7b1a74909a4666241bd45f985).
 ***
 
 ### TS003-Verify_HomeScreen
@@ -104,6 +107,7 @@ By: Blezel M. Tajor
 	- Expected outcome :
 		- When the script verifies that all the elements are present and the modal is displayed the script should be “PASSED”.
 
+Demonstration Result : Link [here](https://www.loom.com/share/5ccea03bf4d84a989e76f159e3993fdf).
 ***
 
 
@@ -137,3 +141,5 @@ By: Blezel M. Tajor
 	- Expected outcome :
 		- The script will verify if the required items are empty a dialog modal should be present. If the dialog message is present the script should be “PASSED”.
 		- The script will verify if the inputted values are valid in all the fields it should record and it will transition to Health checkup screen. If the following are correct the script should be “PASSED”.
+
+Demonstration Result : Link [here](https://www.loom.com/share/a6ebcab901d040369184192bda7e1637).
