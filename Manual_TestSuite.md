@@ -29,7 +29,7 @@ This manual is intended to teach QA or other staff how to run Katalon test scrip
 -   Save the file in any directory you want.
 -   Take note of the directory address for later steps.
 
-![](https://gyazo.com/d7cc6b75851e569bb2b58f1846be5a04.gif)
+![](https://i.gyazo.com/d7cc6b75851e569bb2b58f1846be5a04.gif)
 
 
 **Step 2**
