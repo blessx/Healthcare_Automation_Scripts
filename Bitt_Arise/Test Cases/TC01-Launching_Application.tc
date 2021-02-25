@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This is a script which is to install the app in iOS devices and Android devices.</description>
-   <name>TC01-Launching_Application</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e5843758-4901-4f87-86dc-2fc55c2c8c7e</testCaseGuid>
-</TestCaseEntity>

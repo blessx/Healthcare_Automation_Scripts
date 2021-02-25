@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if you tap the ログイン button it will transition to login screen.</description>
+   <name>TC04-SignInbutton_transition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e314cd3c-88bd-4ecd-9af0-ff3b0b18b306</testCaseGuid>
+</TestCaseEntity>

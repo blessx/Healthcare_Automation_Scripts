@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/Users/blezeltajor/Downloads/Goal_App/Arise_healthcareApp/AndroidAPK/app.apk'</initValue>
+      <initValue>'/Users/blezeltajor/Documents/app_files/pockethealthcare/apk/app.apk'</initValue>
       <name>G_Android_App</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/Users/blezeltajor/Downloads/Goal_App/Arise_healthcareApp/iOsAPP/Runner.app'</initValue>
+      <initValue>'/Users/blezeltajor/Documents/app_files/pockethealthcare/ios/Runner.app'</initValue>
       <name>G_iOS_App</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>5</initValue>
+      <initValue>15</initValue>
       <name>G_Delay_long</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if you tap the 新規会員登録 button it will transition to register screen.</description>
+   <name>TC02-SignUpbutton_transition</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92186c8b-a90d-4165-85be-97089edebced</testCaseGuid>
+</TestCaseEntity>

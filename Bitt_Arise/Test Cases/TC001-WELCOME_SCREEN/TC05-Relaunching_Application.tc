@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if the welcome screen appears when you install an existing installed app.</description>
+   <name>TC05-Relaunching_Application</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>82aea817-3f54-45de-9500-a16473b5a966</testCaseGuid>
+</TestCaseEntity>

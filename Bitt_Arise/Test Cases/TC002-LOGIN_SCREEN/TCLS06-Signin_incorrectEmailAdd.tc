@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if you can login when the email address incorrect but password is correct.</description>
+   <name>TCLS06-Signin_incorrectEmailAdd</name>
+   <tag></tag>
+   <comment>Note: There is no Sign_up feature yet so signin feature test auth is static
+This is to verify the signin feature using valid credentials</comment>
+   <testCaseGuid>4cd13891-4d04-40c9-8700-9b8191374dbd</testCaseGuid>
+</TestCaseEntity>
