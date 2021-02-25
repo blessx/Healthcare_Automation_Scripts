@@ -59,9 +59,9 @@ This manual is intended to teach QA or other staff how to run Katalon scripts th
 Therefore, by following the steps above, the staff or QA I concludes that they can run the test suites in Katalon Studios using their Android device.
 
   
-
-**Notes to remember**
-
-1.  Don’t forget to change the ‘apk’ file directory.
-2.  The test cases must be in the correct order, unless you can run the test cases dynamically. In this case, each case is validated by a scenario, so you can see that the test cases have IDs and are in the proper order.
-3.  Always check the ‘Run’ column if all the desired test cases are checked. This means it runs in the same test suite.
+ **Notes to remember**
+> 1.  Don’t forget to change the ‘apk’ file directory.
+> 2.  The test cases must be in the correct order unless you can run the test cases dynamically. In this case, each case is validated by a
+> scenario, so you can see that the test cases have IDs and are in the
+> proper order.
+> 3.  Always check the ‘Run’ column if all the desired test cases are checked. This means it runs in the same test suite.
