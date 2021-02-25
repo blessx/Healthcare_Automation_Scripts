@@ -21,12 +21,12 @@ import io.appium.java_client.ios.IOSDriver as IOSDriver
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 
 'Verify the functionality of recording blood pressure data'
-
-Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
+Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 3, GlobalVariable.G_Timeout_long)
+Mobile.delay(GlobalVariable.G_Delay_short)
 
 'Verify the validation message if the inputted value for AM and PM is 0 '
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), GlobalVariable.G_Timeout_long)) {
-	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 2, GlobalVariable.G_Timeout_long)
+	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 3, GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	
 	//This is for PM data
@@ -44,7 +44,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Bloodp
 	
 	//This is for AM data
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_AMbtn'), GlobalVariable.G_Timeout_long)
-	
+
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_maxfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput3 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
 	bloodpressureminInput3.getKeyboard().pressKey('0')
@@ -58,6 +58,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Bloodp
 	Mobile.verifyElementText(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_errmsg'), "1～999mmHgで入力してください", FailureHandling.OPTIONAL)
 	Mobile.tap(findTestObject('Object Repository/Android-RecordFromTOP/RecordScreen_cancelbtn'), GlobalVariable.G_Timeout_long)
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	
 } else {
 	println("The record Button is not present")
@@ -67,6 +68,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Bloodp
 'Verify the validation message if the inputted value for AM and PM more than 999'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), GlobalVariable.G_Timeout_long)) {
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 2, GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 		
@@ -107,6 +109,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record
 'Verify the validation message if the inputted value for min is greater than the max data value'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), GlobalVariable.G_Timeout_long)) {
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 3, GlobalVariable.G_Timeout_long)
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 3, GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 		
@@ -147,6 +150,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record
 'Verify to record valid data for AM'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), GlobalVariable.G_Timeout_long)) {
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 3, GlobalVariable.G_Timeout_long)
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 3, GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	
@@ -158,7 +162,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record
 		
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_minfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput10 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	bloodpressureminInput10.getKeyboard().pressKey('85')
+	bloodpressureminInput10.getKeyboard().pressKey('80')
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_donebtnkeyboard'), GlobalVariable.G_Timeout_long)
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_recordbtn'), GlobalVariable.G_Timeout_long)
 		
@@ -171,18 +175,19 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record
 Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
 'Verify to record valid data for PM'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), GlobalVariable.G_Timeout_long)) {
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.tapAndHold(findTestObject('Object Repository/Android-BloodpressureRecord/Android-bloodpressureRecordbtnfromTOP'), 2, GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_PMbtn'), GlobalVariable.G_Timeout_long)
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_maxfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput9= ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	bloodpressureminInput9.getKeyboard().pressKey('95')
+	bloodpressureminInput9.getKeyboard().pressKey('85')
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_donebtnkeyboard'), GlobalVariable.G_Timeout_long)
 		
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_minfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput10 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	bloodpressureminInput10.getKeyboard().pressKey('90')
+	bloodpressureminInput10.getKeyboard().pressKey('75')
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_donebtnkeyboard'), GlobalVariable.G_Timeout_long)
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_recordbtn'), GlobalVariable.G_Timeout_long)
 		

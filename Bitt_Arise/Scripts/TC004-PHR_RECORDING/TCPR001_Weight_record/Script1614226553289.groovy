@@ -23,6 +23,7 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 'Verify record Weight data functionality'
 Mobile.startApplication(GlobalVariable.G_Android_App, false)
 Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
+Mobile.delay(GlobalVariable.G_Delay_short)
 
 'Verify the validation message if the inputted value is 0.'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-RecordFromTOP/TOP_Weightrecordbtn'), GlobalVariable.G_Timeout_long)) {
@@ -56,7 +57,7 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record
 'Verify to record a valid data'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Record/Android-Weightrecordtitle'), GlobalVariable.G_Timeout_long)) {
 	AndroidDriver<?> weightInput3 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	weightInput3.getKeyboard().pressKey('45')
+	weightInput3.getKeyboard().pressKey('55')
 	Mobile.tap(findTestObject('Object Repository/Android-WeightRecord/Android-WeightRecord_recordbtn'), GlobalVariable.G_Timeout_long)
 	Mobile.verifyElementExist(findTestObject('Object Repository/Android_HOME/Android-TOP_weightscreen'), GlobalVariable.G_Timeout_long, FailureHandling.OPTIONAL)
 } else {
