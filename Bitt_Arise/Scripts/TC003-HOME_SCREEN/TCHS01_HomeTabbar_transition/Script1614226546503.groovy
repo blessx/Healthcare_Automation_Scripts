@@ -16,6 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 'Verify if it will transition to each screen when you tap each tab.'
+Mobile.startApplication(GlobalVariable.G_Android_App, false)
 
 'Verify if you tap the STEPS tab the steps graph screen will display.'
 Mobile.tap(findTestObject('Object Repository/Android_HOME/Android-TOP_stepscreen'), GlobalVariable.G_Timeout_long)

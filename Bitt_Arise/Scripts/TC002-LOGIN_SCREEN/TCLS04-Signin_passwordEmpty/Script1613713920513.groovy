@@ -25,22 +25,19 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 
 'This is to verify if the validation message is displayed when the password field is empty.'
 
-if (Device.isIOS()) {
-	println("Verifying in iOS device.")
-}
-
-if (Device.isAndroid()) {
     println('Verifying using Android device.')
-	Mobile.startApplication(GlobalVariable.G_Android_App, false)
-	
 	// enter email address credential only
-	Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-EmailaddressInputField'), GlobalVariable.G_Timeout_long)
+	Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Android-Login_usernameNoterr'), GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	AndroidDriver<?> driverLoginUserName = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
 	driverLoginUserName.getKeyboard().pressKey('blezel_tajor@ligph.com')
-
+	
     Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-LoginBtn'), GlobalVariable.G_Timeout_long)
-	Mobile.delay(GlobalVariable.G_Delay_short)
+
+	for (int i=1; i<=23; i++) {
+		driverLoginUserName.pressKeyCode(67);
+	}
 	
 	Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'), GlobalVariable.G_Timeout_long) // to verify the element of the validation message is present
-}
+	Mobile.verifyElementText(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'),'メールアドレスまたはパスワードが誤っています' , FailureHandling.OPTIONAL)
+

@@ -29,18 +29,13 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 
 'This is to verify if a validation message is displayed if no credentials have been entered'
 
-if (Device.isIOS()) {
-	println("Verifying in iOS device.")
-}
-
-if (Device.isAndroid()) {
 	println("Verifying in Android device.")
-	Mobile.startApplication(GlobalVariable.G_Android_App, false)
 	
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-LoginBtn'), GlobalVariable.G_Timeout_long)
-	Mobile.delay(GlobalVariable.G_Delay_long)
+	Mobile.delay(GlobalVariable.G_Delay_short)
 	Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'), GlobalVariable.G_Timeout_long) // to verify the element of the validation message is present
-}
+	Mobile.verifyElementText(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'),'メールアドレスまたはパスワードが誤っています' , FailureHandling.OPTIONAL)
 
 
 

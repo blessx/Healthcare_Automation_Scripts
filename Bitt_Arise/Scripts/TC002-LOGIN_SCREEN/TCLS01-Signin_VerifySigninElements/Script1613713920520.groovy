@@ -20,25 +20,19 @@ import com.detroitlabs.katalonmobileutil.device.App as App
 import com.detroitlabs.katalonmobileutil.device.Device as Device
 
 'This is to verify if all the components or elements in the login screen is present'
-if (Device.isIOS()) {
-    println('Verifying in iOS device.')
-}
 
-if (Device.isAndroid()) {
     println('Verifying in an Android device.')
-
-    Mobile.startApplication(GlobalVariable.G_Android_App, false)
+	Mobile.startApplication(GlobalVariable.G_Android_App, false)
 
     Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-pockethealthcarelogoimage'), GlobalVariable.G_Timeout_long) // to verify if pockethealthcare logo image is present
     Mobile.verifyElementExist(findTestObject('New_LoginScreen/Login-EmailaddressInputField'), GlobalVariable.G_Timeout_long )// to verify if email address input field is present
     Mobile.verifyElementExist(findTestObject('New_LoginScreen/Login-PasswordInputField'), GlobalVariable.G_Timeout_long )// to verify if password input field is present
         
-
     // to verify the placeholder text if it is correct
     Mobile.verifyElementText(findTestObject('New_LoginScreen/Login-EmailaddressInputField'), 'メールアドレス')
     Mobile.verifyElementText(findTestObject('New_LoginScreen/Login-PasswordInputField'), 'パスワード')
     Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-ForgotPasswordLink'), GlobalVariable.G_Timeout_long) // to verify if forgot password link is present
     Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-SignupTitleDesc'), GlobalVariable.G_Timeout_long) // to verify if signup text is present
     Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-Signuplink'), GlobalVariable.G_Timeout_long) // to verify if signup link is present
-}
+
 

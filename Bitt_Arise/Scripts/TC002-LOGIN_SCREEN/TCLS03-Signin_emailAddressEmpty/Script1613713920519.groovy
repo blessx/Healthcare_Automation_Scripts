@@ -1,3 +1,4 @@
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -24,23 +25,21 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 
 
 'This is to verify if the validation message is displayed when the email address field is empty.'
-
-if (Device.isIOS()) {
-	println("Verifying in iOS device.")
-}
-
-if (Device.isAndroid()) {
-    println('Verifying using Android device.')
-	Mobile.startApplication(GlobalVariable.G_Android_App, false)
-	
+	println("Verifying in Android device.")
 	// enter password credential
-    Mobile.tap(findTestObject('New_LoginScreen/Login-PasswordInputField'), GlobalVariable.G_Timeout_long)
+    Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Android-Login_passwordErr'), GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	AndroidDriver<?> driverLoginPassword = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
     driverLoginPassword.getKeyboard().pressKey('Testing143')
+	driverLoginPassword.hideKeyboard()
 
     Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-LoginBtn'), GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
 	
+	for (int i=1; i<=10; i++) {
+		driverLoginPassword.pressKeyCode(67);
+	}
+	
 	Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'), GlobalVariable.G_Timeout_long) // to verify the element of the validation message is present
-}
+	Mobile.verifyElementText(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'),'メールアドレスまたはパスワードが誤っています' , FailureHandling.OPTIONAL)
+

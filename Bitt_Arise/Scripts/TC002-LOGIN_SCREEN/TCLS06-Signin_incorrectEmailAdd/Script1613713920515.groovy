@@ -24,31 +24,19 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 
 
 'This is to verify if the validation message is displayed when the email address is incorrect.'
-
-if (Device.isIOS()) {
-	println("Verifying in iOS device.")
-}
-
-if (Device.isAndroid()) {
-    println('Verifying using Android device.')
-	Mobile.startApplication(GlobalVariable.G_Android_App, false)
-	
-	// enter incorrect email address
-	Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-EmailaddressInputField'), GlobalVariable.G_Timeout_long)
+	println("Verifying in Android device.")
+	// verify incorrect email address using correct password
+	Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Android-Login_passwordErr'), GlobalVariable.G_Timeout_long)
 	Mobile.delay(GlobalVariable.G_Delay_short)
-	AndroidDriver<?> driverLoginUserName = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	driverLoginUserName.getKeyboard().pressKey('blezel_tajorr@ligph.com')
-	
-	Mobile.tap(findTestObject('New_LoginScreen/Login-PasswordInputField'), GlobalVariable.G_Timeout_long)
-	Mobile.delay(GlobalVariable.G_Delay_short)
-	AndroidDriver<?> driverLoginPassword = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	driverLoginPassword.getKeyboard().pressKey('Testing143')
-
+	AndroidDriver<?> driverLoginPassword2 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
+	driverLoginPassword2.getKeyboard().pressKey('Testing143')
 
     Mobile.tap(findTestObject('Object Repository/New_LoginScreen/Login-LoginBtn'), GlobalVariable.G_Timeout_long)
-	Mobile.delay(GlobalVariable.G_Delay_short)
-	
 	Mobile.verifyElementExist(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'), GlobalVariable.G_Timeout_long) // to verify the element of the validation message is present
-}
+	Mobile.verifyElementText(findTestObject('Object Repository/New_LoginScreen/Login-ErrorMsg'),'メールアドレスまたはパスワードが誤っています' , FailureHandling.OPTIONAL)
+	
+	Mobile.closeApplication()
+
+	
 
 

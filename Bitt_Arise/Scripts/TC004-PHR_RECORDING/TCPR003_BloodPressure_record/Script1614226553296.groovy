@@ -177,12 +177,12 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-Bloodp
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_PMbtn'), GlobalVariable.G_Timeout_long)
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_maxfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput9= ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	bloodpressureminInput9.getKeyboard().pressKey('90')
+	bloodpressureminInput9.getKeyboard().pressKey('95')
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_donebtnkeyboard'), GlobalVariable.G_Timeout_long)
 		
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_minfield'), GlobalVariable.G_Timeout_long)
 	AndroidDriver<?> bloodpressureminInput10 = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
-	bloodpressureminInput10.getKeyboard().pressKey('85')
+	bloodpressureminInput10.getKeyboard().pressKey('90')
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_donebtnkeyboard'), GlobalVariable.G_Timeout_long)
 	Mobile.tap(findTestObject('Object Repository/Android-BloodpressureRecord/Android-Bloodpressure_recordbtn'), GlobalVariable.G_Timeout_long)
 		

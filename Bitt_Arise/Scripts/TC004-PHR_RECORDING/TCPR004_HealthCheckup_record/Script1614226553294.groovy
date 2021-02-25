@@ -24,11 +24,11 @@ import org.apache.commons.lang.RandomStringUtils as RandStr
 
 'Verify the functionality of the record feature for Health Checkup data'
 
-Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 2, GlobalVariable.G_Timeout_long)
+Mobile.tapAndHold(findTestObject('Object Repository/Android-RecordFromTOP/TOP_RecordBtn'), 3, GlobalVariable.G_Timeout_long)
 
 'Verify to validation message if the required items are empty'
 if (Mobile.verifyElementVisible(findTestObject('Object Repository/Android-HealthcheckupRecord/Android-Healthcheckup_recordbtnhealth'), GlobalVariable.G_Timeout_long)) {
-	Mobile.tapAndHold(findTestObject('Object Repository/Android-HealthcheckupRecord/Android-Healthcheckup_recordbtnhealth'), 2, GlobalVariable.G_Timeout_long)
+	Mobile.tapAndHold(findTestObject('Object Repository/Android-HealthcheckupRecord/Android-Healthcheckup_recordbtnhealth'), 3, GlobalVariable.G_Timeout_long)
 	
 	'Scroll to 白血球数 text'
 	Mobile.scrollToText('白血球数', FailureHandling.STOP_ON_FAILURE)
