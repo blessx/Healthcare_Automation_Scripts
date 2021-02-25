@@ -44,7 +44,7 @@ This manual is intended to teach QA or other staff how to run Katalon scripts th
 ![](https://i.gyazo.com/ab343030eede1b5471302c8b4129ad78.gif)
 
 **Steps 4**
--   Click Test Suite tab
+-   Click the Test Suite tab
 -   Double-click any of the 'Test Suite' file 
 	-	Check if the Test cases ID are in correct order and the Run column are all checked.
 ![](https://i.gyazo.com/859f618714909d60b68d7bfb4af0a428.gif)
