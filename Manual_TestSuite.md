@@ -9,7 +9,8 @@ By: Blezel M. Tajor
 ***
 
 **Purpose and Objectives**
-This manual is intended to teach QA or other staff how to run Katalon scripts through running a test suites for doing re-testing on each screen or feature of the Pocket Healthcare application. The success of this automated test is that QA reduces the time it takes to perform regression tests, especially when the application is large.
+
+This manual is intended to teach QA or other staff how to run Katalon test scripts through running a test suite for the purpose of doing a retesting on each screen or feature of the Pocket Healthcare application. The success of this automation test is to reduce the time that QA takes to perform regression and retesting tests, especially when the application is getting bigger.
 
 **What you need**
 1.  A running Katalon Studio.
@@ -56,7 +57,7 @@ This manual is intended to teach QA or other staff how to run Katalon scripts th
 
 **Conclusion**
 
-Therefore, by following the steps above, the staff or QA I concludes that they can run the test suites in Katalon Studios using their Android device.
+Therefore I conclude that by following the steps above, the staff or QA can run the test suite in Katalon Studios using their Android device.
 
   
  **Notes to remember**
